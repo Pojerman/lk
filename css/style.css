@@ -1114,6 +1114,7 @@ body {
 }
 .footer__office {
 	max-width: 609px;
+	width: 100%;
 	margin: 0px 200px 0px 0px;
 }
 .footer__title {
@@ -1194,6 +1195,19 @@ body {
 	margin: 0px 68px 0px 0px;
 }
 
+@media (max-width: 992px) {
+	.footer__office {
+		margin: 0px 0px 0px 0px;
+	}
+	.footer__body {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.footer__map > iframe {
+		min-width: 280px;
+		min-height: 260px;
+	}
+}
 @media (max-width: 479px) {
 	.footer__office {
 		margin: 0px 0px 0px 0px;
@@ -1229,5 +1243,8 @@ body {
 	}
 	.footer__link {
 		font-size: 14px;
+	}
+	.footer__contact {
+		margin: 0px 0px 20px 0px;
 	}
 }
